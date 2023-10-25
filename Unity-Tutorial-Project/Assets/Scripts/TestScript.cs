@@ -9,10 +9,21 @@ public class TestScript : MonoBehaviour
     [SerializeField]
     string editorString = "Yo";
 
+    [SerializeField]
+    float targetScale = 1.0f;
+
+    [SerializeField]
+    SpriteRenderer playerSprite = null;
+
+    [SerializeField]
+    Color spriteColor = Color.white;
 
     // Private Variables
     string combinedString;
     //int frameCount = (60);
+
+    Vector3 changingScale = new Vector3(1.0f, 1.0f, 1.0f);
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,15 +39,15 @@ public class TestScript : MonoBehaviour
         string firstString;
         firstString = "You shall not";
         //Debug.Log(firstString);
-        
+
         string secondString = " PASS!";
         //Debug.Log(secondString);
 
         combinedString = firstString + secondString;
-        Debug.Log(combinedString);
+        //Debug.Log(combinedString);
+        //Debug.Log(editorString);
 
-        Debug.Log(editorString);
-
+        playerSprite.color = spriteColor;
 
     }
 
@@ -48,6 +59,16 @@ public class TestScript : MonoBehaviour
         
         transform.Translate(0.1f, 0, 0);
         */
-        Debug.Log(combinedString);
+
+        //Debug.Log(combinedString);
+
+        Debug.Log(targetScale = targetScale + 0.01f);
+
+        changingScale.x = targetScale;
+        changingScale.y = targetScale;
+        changingScale.z = targetScale;
+
+        transform.localScale = changingScale;
+
     }
 }
