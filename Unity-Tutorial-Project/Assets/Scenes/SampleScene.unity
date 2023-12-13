@@ -227,6 +227,8 @@ GameObject:
   - component: {fileID: 728282942}
   - component: {fileID: 728282944}
   - component: {fileID: 728282945}
+  - component: {fileID: 728282946}
+  - component: {fileID: 728282947}
   m_Layer: 0
   m_Name: TestObject
   m_TagString: Untagged
@@ -241,7 +243,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728282941}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee46278b0c4a6654ba47deb513971c57, type: 3}
   m_Name: 
@@ -329,3 +331,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9aa83d3b04e08b44b44b2f23183dd59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &728282946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728282941}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea10f6f1da9ee2d4f911e4036890d6cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingCurrency: 190
+  pullCost: 10
+  rewardChance: 0.8
+--- !u!114 &728282947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728282941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79c87ed52744954d9daf46767f15dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 9
