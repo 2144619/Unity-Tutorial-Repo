@@ -14,6 +14,7 @@ public class FourPractice : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Counter that counts up from 0 to the Target Number
         for(int count = 0;count < target;++count)
         {
             Debug.Log(count);
