@@ -23,6 +23,8 @@ public class CloneAll : MonoBehaviour
 
         Vector3 clonePos = Vector3.zero;
 
+
+
     }
 
     // Update is called once per frame
